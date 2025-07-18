@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "fixACORN",
+  "version": "1.0",
+  "description": "Makes you feel less bad about your outstanding balance!",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+        "matches": ["https://acorn.utoronto.ca/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle" 
+    }
+    ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
